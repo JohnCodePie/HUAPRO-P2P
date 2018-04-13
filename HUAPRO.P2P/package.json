@@ -1,0 +1,12 @@
+{
+  "name": "huapro.p2-p",
+  "version": "0.0.0",
+  "description": "HUAPRO.P2P",
+  "main": "app.js",
+  "author": {
+    "name": "Schule"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.87"
+  }
+}
