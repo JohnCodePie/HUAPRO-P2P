@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "HUAPRO.UserServer", "HUAPRO.UserServer\HUAPRO.UserServer.njsproj", "{FBD841D6-2F89-466A-8D08-22E7E6A19CBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBD841D6-2F89-466A-8D08-22E7E6A19CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD841D6-2F89-466A-8D08-22E7E6A19CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD841D6-2F89-466A-8D08-22E7E6A19CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD841D6-2F89-466A-8D08-22E7E6A19CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B957D0A4-983D-4F4D-B691-A9B3B1BE6DC0}
+	EndGlobalSection
+EndGlobal
