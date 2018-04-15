@@ -13,7 +13,9 @@
   "dependencies": {
     "debug": "^2.2.0",
     "express": "^4.14.0",
-    "pug": "^2.0.0-rc.3"
+    "pug": "^2.0.0-rc.3",
+    "express-validator": "*",
+    "body-parser": "*"
   },
   "devDependencies": {
     "@types/debug": "0.0.30",
