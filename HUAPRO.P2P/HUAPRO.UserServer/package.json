@@ -12,10 +12,10 @@
   "main": "app.js",
   "dependencies": {
     "debug": "^2.2.0",
-    "express": "^4.14.0",
+    "express": "^4.16.3",
     "pug": "^2.0.0-rc.3",
-    "express-validator": "*",
-    "body-parser": "*"
+    "express-validator": "5.1.2",
+    "body-parser": "1.18.2"
   },
   "devDependencies": {
     "@types/debug": "0.0.30",

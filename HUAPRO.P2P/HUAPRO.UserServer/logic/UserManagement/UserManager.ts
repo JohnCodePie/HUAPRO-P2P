@@ -1,9 +1,11 @@
-﻿class UserManager implements IManager {
+﻿import { User } from "./User";
+
+export class UserManager{
     //later... extend with mongoDB
     private allUser: Array<User>;
 
-    public Create() {
-        throw new Error("Method not implemented.");
+    public Create(User) {
+        return new User(User);
     }
     public Delete() {
         throw new Error("Method not implemented.");

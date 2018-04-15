@@ -13,7 +13,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fbd841d6-2f89-466a-8d08-22e7e6a19cba</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>app.ts</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,7 +25,7 @@
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
     <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
     <EnableTypeScript>true</EnableTypeScript>
-    <StartWebBrowser>true</StartWebBrowser>
+    <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,7 +37,12 @@
     <Content Include="views\UserManagement\register.pug">
       <SubType>Code</SubType>
     </Content>
-    <TypeScriptCompile Include="app.ts" />
+    <Content Include="views\UserManagement\registrationError.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <TypeScriptCompile Include="app.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="logic\Interfaces\IManager.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

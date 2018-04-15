@@ -1,27 +1,30 @@
-﻿import debug = require('debug');
-import express = require('express');
-import path = require('path');
-import bodyParser = require('body-parser');
-import expressValidator = require('express-validator');
+﻿//import * as express from "express";
+//import * as path from "path";
+//import * as debug from "debug";
+//import * as bodyparser from "body-parser";
+var express = require('express');
+var path = require('path');
+var debug = require('debug');
+var bodyparser = require('body-parser');
 
-import routes from './routes/index';
-import users from './routes/user';
+var routes = require('./routes/index');
+var users = require('./routes/user');
 
 var app = express();
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(expressValidator());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-console.log("lasd");
-
+// set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: false }));
+
 app.use('/', routes);
 app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -57,5 +60,9 @@ app.use((err: any, req, res, next) => {
 app.set('port', process.env.PORT || 3000);
 
 var server = app.listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + server.address().port);
     debug('Express server listening on port ' + server.address().port);
 });
+
+
+
