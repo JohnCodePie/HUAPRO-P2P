@@ -1,0 +1,24 @@
+﻿extends ../layout
+
+block content
+    .main.container
+        h1.titles= title
+
+        // register form
+        form(method='POST' action='/register')
+          div.form-group
+            label(for='vorname') Vorname:
+            input#name.form-control(type='text', placeholder='firstname' name='firstname')
+          div.form-group
+            label(for='nachname') Vorname:
+            input#name.form-control(type='text', placeholder='lastname' name='lastname')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='pw') Password:
+            input#pw.form-control(type='password' name='password')
+          div.form-group
+            label(for='pw2') Confirm Password:
+            input#pw2.form-control(type='password' name='confirmPassword')
+          button.btn.btn-primary(type='submit') Beam me up!
