@@ -1,11 +1,8 @@
-﻿//import * as express from "express";
-//import * as path from "path";
-//import * as debug from "debug";
-//import * as bodyparser from "body-parser";
-var express = require('express');
+﻿var express = require('express');
 var path = require('path');
 var debug = require('debug');
 var bodyparser = require('body-parser');
+var morgan = require('morgan');
 
 var routes = require('./routes/index');
 var users = require('./routes/user');
@@ -18,6 +15,9 @@ app.set('view engine', 'pug');
 
 // set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+//set logger
+app.use(morgan('tiny'));
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
