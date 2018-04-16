@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/register', (req, res) => {
-    res.render('UserManagement/register', { title: 'Register', error1: 'test'});
+    res.render('UserManagement/register', { title: 'Register'});
 });
 
 router.post('/register', [

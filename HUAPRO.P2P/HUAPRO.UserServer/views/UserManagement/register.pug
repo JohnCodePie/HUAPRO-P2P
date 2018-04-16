@@ -1,28 +1,24 @@
 ﻿extends ../layout
 
-
 block content
     .main.container
-        .form
-            h1.titles= title
+            h1.over= title
 
             // register form
             form(method='POST' action='register')
-                div.form-group
+                div.over
                     label(for='vorname') Vorname:
-                    input#name.form-control(type='text', placeholder='firstname' name='firstname')
-                div.form-group
+                    input#firstname.form-control(type='text', placeholder='firstname' name='firstname')
+                div.over
                     label(for='nachname') Vorname:
-                    input#name.form-control(type='text', placeholder='lastname' name='lastname')
-                div.form-group
+                    input#lastname.form-control(type='text', placeholder='lastname' name='lastname')
+                div.over
                     label(for='email') Email:
                     input#email.form-control(type='email', placeholder='name@email.com' name='email')
-                div.form-group
+                div.over
                     label(for='pw') Password:
                     input#pw.form-control(type='password' name='password')
-                div.form-group
+                div.over
                     label(for='pw2') Confirm Password:
                     input#pw2.form-control(type='password' name='confirmPassword')
                 button.btn.btn-primary(type='submit') Beam me up!
-
-        append error
