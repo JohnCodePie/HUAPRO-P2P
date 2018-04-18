@@ -34,6 +34,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="public\stylesheets\registerform.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\background.pug">
       <SubType>Code</SubType>
     </Content>
@@ -78,7 +81,7 @@
     <Folder Include="views\UserManagement\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="public\javascripts\test.js">
+    <Compile Include="public\javascripts\backgroundanimation.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
