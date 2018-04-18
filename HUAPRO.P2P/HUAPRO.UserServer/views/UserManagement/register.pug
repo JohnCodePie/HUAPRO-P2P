@@ -2,23 +2,29 @@
 
 block content
     .main.container
-            h1.over= title
+        .over
+            ul#errors
+              each val in errorsT
+                currerror = val
+                li= currerror.message
+
+            h1= title
 
             // register form
             form(method='POST' action='register')
-                div.over
+                div.form-holder
                     label(for='vorname') Vorname:
                     input#firstname.form-control(type='text', placeholder='firstname' name='firstname')
-                div.over
+                div.form-holder
                     label(for='nachname') Vorname:
                     input#lastname.form-control(type='text', placeholder='lastname' name='lastname')
-                div.over
+                div.form-holder
                     label(for='email') Email:
                     input#email.form-control(type='email', placeholder='name@email.com' name='email')
-                div.over
+                div.form-holder
                     label(for='pw') Password:
                     input#pw.form-control(type='password' name='password')
-                div.over
+                div.form-holder
                     label(for='pw2') Confirm Password:
                     input#pw2.form-control(type='password' name='confirmPassword')
                 button.btn.btn-primary(type='submit') Beam me up!

@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/register', (req, res) => {
-    res.render('UserManagement/register', { title: 'Register'});
+    res.render('UserManagement/register', { title: 'Register', errorsT: []});
 });
 
 router.post('/register', [
@@ -45,9 +45,9 @@ router.post('/register', [
   // Get the validation result whenever you want; see the Validation Result API for all options!
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    return res.status(422).json({ errors: errors.mapped() });
-      //res.status(422);
-      //res.render('UserManagement/register', { title: 'Register' });
+    //return res.status(422).json({ errors: errors.mapped() });
+      res.status(422);
+      return res.render('UserManagement/register', { title: 'Register', errorsT: errors.mapped() });
   }
 
   // matchedData returns only the subset of data validated by the middleware
