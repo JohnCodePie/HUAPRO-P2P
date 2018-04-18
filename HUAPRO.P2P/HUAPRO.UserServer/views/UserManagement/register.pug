@@ -1,7 +1,14 @@
 ﻿extends ../layout
 
 block header
-  link(rel='stylesheet', href='/stylesheets/registerform.css')
+ link(rel='stylesheet', href='/stylesheets/registerform.css')
+
+block error
+    .error.container
+        .over
+            ul
+                each val in errors
+                    li= JSON.stringify(val)
 
 block content
   .inner
