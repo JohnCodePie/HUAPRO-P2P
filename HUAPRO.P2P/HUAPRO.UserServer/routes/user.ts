@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/register', (req, res) => {
-    res.render('UserManagement/register', { title: 'Register', errorsT: []});
+    res.render('UserManagement/register', { title: 'Register', errors: []});
 });
 
 router.post('/register', [
@@ -47,7 +47,7 @@ router.post('/register', [
   if (!errors.isEmpty()) {
     //return res.status(422).json({ errors: errors.mapped() });
       res.status(422);
-      return res.render('UserManagement/register', { title: 'Register', errorsT: errors.mapped() });
+      return res.render('UserManagement/register', { title: 'Register', errors: errors.mapped() });
   }
 
   // matchedData returns only the subset of data validated by the middleware
