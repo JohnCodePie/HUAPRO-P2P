@@ -1,6 +1,7 @@
 ﻿/* Bordered form */
 form {
     border: 3px solid #f1f1f1;
+    background-color: #f3f3f3;
 }
 
 /* Full-width inputs */
@@ -32,32 +33,9 @@ button {
 
 /* Add padding to containers */
 .container {
-    padding: 16px;
-    background-color: white;
 }
 
 .main {
-    width: 30%;
-}
-
-.main {
-    margin-right: 3em;
-}
-
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
+    box-sizing: border-box;
+    padding: 0 50px;
 }

@@ -3,10 +3,26 @@ a {
     color: #00B7FF;
 }
 
+htlm, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-color: #fff;
-    overflow: hidden;
     margin: 0;
+    background: #16BFFD; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CB3066, #16BFFD); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.inner {
+    width: 100%;
+    position: relative;
+    max-width: 1280px;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -17,12 +33,6 @@ canvas {
     display: block;
 }
 
-.over {
-    z-index: 10;
-    position: relative;
-}
-
-.under {
-    position: fixed;
-    z-index: 1;
+.contentcontainer {
+    overflow:scroll;
 }
